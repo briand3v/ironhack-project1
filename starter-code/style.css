@@ -1,0 +1,30 @@
+html {
+  box-sizing: border-box;
+  background: #ffc600;
+  font-family: 'helvetica neue';
+  font-size: 20px;
+  font-weight: 200;
+}
+
+body {
+  margin: 0;
+}
+
+#container-game {
+  display: block;
+  background-color: white;
+  max-width: none;
+  min-width: none;
+  width: 500px;
+  height: 500px;
+}
+
+#createSplash {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+}
+
+#containerName {
+  width:
+}
