@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   height: 100vh;
   width: 100vw;
@@ -5,8 +13,23 @@ body {
 }
 
 .app {
+  /*position: null;*/
+  background-color: white;
+  height: 90%;
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  height: 70px;
+  background-image: url('../starter-code/img/wallhaven-4764.png');
+  background-size: cover;
+}
+
+.game {
+  display: block;
   position: absolute;
-  background-color: grey;
+  background-color: white;
   height: 100%;
   width: 100%;
 }
@@ -23,13 +46,17 @@ body {
 }
 
 #splash {
-  display: block;
+  background-image: url("../starter-code/img/wallpaper-shooter.jpg");
+  background-size: cover;
+  display: flex;
   width: 100%;
   height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #container {
-  position: absolute;
   top: 300px;
   left: 300px;
 }
@@ -37,7 +64,7 @@ body {
 #image {
   width: 200px;
   height: 105px;
-  background-image: url("../starter-code/img/btn-play.jpg");
+  background-image: url("../starter-code/img/btn-play-copia.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -46,6 +73,7 @@ body {
   font-family: OCR A Std, monospace;
   font-size: 100px;
   margin: 0;
+  color: grey;
 }
 
 /*
@@ -62,46 +90,63 @@ body {
   justify-content: center;
 }
 
-.map0 {
-  background-image: url("../starter-code/img/wallpaper-zombies.jpg");
-  background-size: cover;
-  width: 150px;
-  height: 100%;
-}
-
-.map1 {
-  background-image: url('../starter-code/img/wallpaper-terrorist.png');
-  background-size: cover;
-  width: 150px;
-  height: 100%;
-}
-
-.map2 {
-  background-image: url("../starter-code/img/wallpaper-alliens.jpg");
-  background-size: cover;
-  width: 150px;
-  height: 100%;
-}
-
-.map3 {
-  background-image: url("../starter-code/img/wallpaper-retro-games.jpg");
-  background-size: cover;
-  width: 150px;
-  height: 100%;
-}
-
 .map {
   box-shadow: inset 0 0 0 5px;
   color: white;
-  transition: font-size
+  transition: font-size;
+  background-size: cover;
+  flex: 1;
+  height: 100%;
+}
+
+.map-zombie {
+  background-image: url("../starter-code/img/wallpaper-zombies.jpg");
+}
+
+.map-terrorist {
+  background-image: url('../starter-code/img/wallpaper-terrorist.png');
+}
+
+.map-aliens {
+  background-image: url("../starter-code/img/wallpaper-alliens.jpg");
+}
+
+.map-nintendo {
+  background-image: url("../starter-code/img/wallpaper-retro-games.jpg");
 }
 
 /*game */
 
 #targets {
+  display: flex;
   position: absolute;
-  width: 600px;
-  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 90%;
+  border: 1px solid grey;
+  animation: animate 0.25s infinite;
+}
+
+@keyframes animate {
+  0% {
+    cursor: url("http://jantimon.nl/running_man/running_man_1.png"), auto;
+  }
+  20% {
+    cursor: url("http://jantimon.nl/running_man/running_man_2.png"), auto;
+  }
+  40% {
+    cursor: url("http://jantimon.nl/running_man/running_man_3.png"), auto;
+  }
+  60% {
+    cursor: url("http://jantimon.nl/running_man/running_man_4.png"), auto;
+  }
+  80% {
+    cursor: url("http://jantimon.nl/running_man/running_man_5.png"), auto;
+  }
+  100% {
+    cursor: url("http://jantimon.nl/running_man/running_man_1.png"), auto;
+  }
 }
 
 #newTarget {
@@ -110,3 +155,44 @@ body {
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
+}
+
+#newTarget2 {
+  position: absolute;
+  width: 70px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  position: relative;
+  -webkit-animation: mymove 5s infinite;
+  /* Safari 4.0 - 8.0 */
+  animation: mymove 2s infinite;
+}
+
+#points {
+  position: absolute;
+  margin: 0px;
+  left: 564px;
+}
+
+.fuck {
+  color: red;
+  position: absolute;
+  font-size: 100px;
+  /*animation: mymove 1s;*/
+}
+
+/*@keyframes mymove {
+  0% {
+    top: 450px;
+  }
+  25% {
+    top: 505px;
+  }
+  75% {
+    top: 510px;
+  }
+  100% {
+    top: 511px;
+  }
+}*/
