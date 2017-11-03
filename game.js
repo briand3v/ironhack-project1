@@ -421,10 +421,11 @@ function Game(containerElement) {
 
     self.containerElement.removeChild(self.targets); // container2
     self.containerElement.removeChild(self.scoreHide);
-    self.x.paused();
+
 
 
     self.buildResults();
+    self.x.paused();
 
 
   };
