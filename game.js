@@ -20,6 +20,7 @@ function Game(containerElement) {
   self.containerGame = null;
   self.getImgInterval = null;
   self.moreInterval = null;
+  self.x = null;
 
   self.maps = [{
       name: 'Zombie',
@@ -339,8 +340,8 @@ function Game(containerElement) {
     self.targets.setAttribute('id', 'targets');
     self.containerElement.appendChild(self.targets);
     self.targets.setAttribute('style', 'background-image:' + 'url(' + map + ')');
-    var x = document.getElementById('myAudio');
-    x.play();
+    self.x = document.getElementById('myAudio');
+    self.x.play();
 
 
     function imgInterval() {
@@ -420,6 +421,7 @@ function Game(containerElement) {
 
     self.containerElement.removeChild(self.targets); // container2
     self.containerElement.removeChild(self.scoreHide);
+    self.x.paused();
 
 
     self.buildResults();
