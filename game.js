@@ -154,6 +154,7 @@ function Game(containerElement) {
 
     self.handlePlayClick = function() {
       self.destroySplash();
+
       self.buildMaps();
 
 
@@ -376,15 +377,21 @@ function Game(containerElement) {
       self.createTargets();
     }, 1000);
 
+    setInterval(function() {
+      clearInterval(self.newTargetInterval);
+      self.destroyGame();
+
+    }, 5000);
+
   };
 
 
   self.killTarget = function(event) {
     clearInterval(self.timeoutTargetID);
-    self.gun = document.getElementById('myGun')
-    self.gun.play();
     console.log(event.target)
     self.containerElement.removeChild(event.target);
+    self.gun = document.getElementById('myGun');
+    self.gun.play();
     if (self.targetIndex === 0) {
 
       var points = 2;
@@ -400,6 +407,8 @@ function Game(containerElement) {
     }
 
   }
+
+
 
   self.destroyGame = function() {
 
