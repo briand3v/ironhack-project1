@@ -36,8 +36,8 @@ function Game(containerElement) {
           dataTarget: 1
         },
         {
-
-
+          target: 'img/zombie-teen.png',
+          dataTarget: 2
         }
       ]
 
@@ -45,54 +45,57 @@ function Game(containerElement) {
     {
       name: 'Terrorist',
       className: 'terrorist',
-
+      img: 'img/wallpaper-terrorist.png',
+      id: 'terrorist',
       targets: [{
-
-
+          target: 'img/terrorist1.png',
+          dataTarget: 0
         },
         {
-
-
+          target: 'img/terrorist2.png',
+          dataTarget: 1
         },
         {
-
-
+          target: 'img/bin-laden.png',
+          dataTarget: 2
         }
       ]
     },
     {
       name: 'Aliens',
       className: 'aliens',
-
+      img: "img/wallpaper-alliens.jpg",
+      id: 'aliens',
       targets: [{
-
-
+          target: 'img/alien-ship.png',
+          dataTarget: 0
         },
         {
-
-
+          target: 'img/ship-alien.png',
+          dataTarget: 0
         },
         {
-
-
+          target: 'img/alien-ship2.png',
+          dataTarget: 0
         }
       ]
     },
     {
       name: 'Nintendo',
       className: 'nintendo',
-
+      img: "img/wallpaper-nintendo.gif",
+      id: 'characters',
       targets: [{
-
-
+          target: 'img/boo.mario.png',
+          dataTarget: 0
         },
         {
-
-
+          target: 'img/Meta-Knight.png',
+          dataTarget: 1
         },
         {
-
-
+          target: 'img/Bowser.png',
+          dataTarget: 2
         }
       ]
     },
@@ -129,6 +132,8 @@ function Game(containerElement) {
     self.containerGame.setAttribute('id', 'container-game');
     play.setAttribute('id', 'container');
     playImg.setAttribute('id', 'splash-image');
+    playImg.setAttribute("src", "img/btn-play-copia.png")
+    nameGame.setAttribute('id', 'name');
     shooter.setAttribute('id', 'shooter');
 
     self.containerGame.appendChild(play);
