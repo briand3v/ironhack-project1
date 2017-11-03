@@ -24,19 +24,19 @@ function Game(containerElement) {
   self.maps = [{
       name: 'Zombie',
       className: 'zombie',
-      img: "img/wallpaperZombies.jpg",
-      img2: "img/wallpaper-zombies2.png",
+      img: "./img/wallpaperZombies.jpg",
+      img2: "./img/wallpaper-zombies2.png",
       id: 'zombies',
       targets: [{
-          target: 'img/zombie-fat.png',
+          target: './img/zombie-fat.png',
           dataTarget: 0
         },
         {
-          target: 'img/Zombie-raven.png',
+          target: './img/Zombie-raven.png',
           dataTarget: 1
         },
         {
-          target: 'img/zombie-teen.png',
+          target: './img/zombie-teen.png',
           dataTarget: 2
         }
       ]
@@ -45,18 +45,18 @@ function Game(containerElement) {
     {
       name: 'Terrorist',
       className: 'terrorist',
-      img: 'img/wallpaper-terrorist.png',
+      img: './img/wallpaper-terrorist.png',
       id: 'terrorist',
       targets: [{
-          target: 'img/terrorist1.png',
+          target: './img/terrorist1.png',
           dataTarget: 0
         },
         {
-          target: 'img/terrorist2.png',
+          target: './img/terrorist2.png',
           dataTarget: 1
         },
         {
-          target: 'img/bin-laden.png',
+          target: './img/bin-laden.png',
           dataTarget: 2
         }
       ]
@@ -64,18 +64,18 @@ function Game(containerElement) {
     {
       name: 'Aliens',
       className: 'aliens',
-      img: "img/wallpaper-alliens.jpg",
+      img: "./img/wallpaper-alliens.jpg",
       id: 'aliens',
       targets: [{
-          target: 'img/alien-ship.png',
+          target: './img/alien-ship.png',
           dataTarget: 0
         },
         {
-          target: 'img/ship-alien.png',
+          target: './img/ship-alien.png',
           dataTarget: 0
         },
         {
-          target: 'img/alien-ship2.png',
+          target: './img/alien-ship2.png',
           dataTarget: 0
         }
       ]
@@ -83,18 +83,18 @@ function Game(containerElement) {
     {
       name: 'Nintendo',
       className: 'nintendo',
-      img: "img/wallpaper-nintendo.gif",
+      img: "./img/wallpaper-nintendo.gif",
       id: 'characters',
       targets: [{
-          target: 'img/boo.mario.png',
+          target: './img/boo.mario.png',
           dataTarget: 0
         },
         {
-          target: 'img/Meta-Knight.png',
+          target: './img/Meta-Knight.png',
           dataTarget: 1
         },
         {
-          target: 'img/Bowser.png',
+          target: './img/Bowser.png',
           dataTarget: 2
         }
       ]
@@ -132,10 +132,10 @@ function Game(containerElement) {
     self.containerGame.setAttribute('id', 'container-game');
     play.setAttribute('id', 'container');
     playImg.setAttribute('id', 'splash-image');
-    playImg.setAttribute("src", "img/btn-play-copia2.png")
+    playImg.setAttribute("src", "./img/btn-play-copia2.png")
     nameGame.setAttribute('id', 'name');
     shooter.setAttribute('id', 'shooter');
-    shooter.setAttribute('src', 'img/title-shooter.png');
+    shooter.setAttribute('src', './img/title-shooter.png');
 
     self.containerGame.appendChild(play);
     var playId = document.getElementById('container');
