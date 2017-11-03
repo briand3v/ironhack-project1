@@ -147,37 +147,6 @@ html {
   height: 90vh;
 }
 
-/*#zombie-map1 {
-  display: block;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: white;
-  background-size: 100% 100%;
-  height: 90vh;
-  animation: example2 1s infinite;
-}*/
-
-@@keyframes example2 {
-  10% {
-    background-image: url('../starter-code/img/wallpaperZombies.jpg');
-    display: block;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: white;
-    background-size: 100% 100%;
-    height: 90vh;
-  }
-  100% {
-    background-image: url('../starter-code/img/wallpaper-zombies2.png');
-    display: block;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: white;
-    background-size: 100% 100%;
-    height: 90vh;
-  }
-}
-
 #newTarget {
   /*position: absolute;*/
   width: 90px;
@@ -204,28 +173,6 @@ html {
   margin: 0px;
   left: 564px;
 }
-
-.fuck {
-  color: red;
-  position: absolute;
-  font-size: 100px;
-  /*animation: mymove 1s;*/
-}
-
-/*@keyframes mymove {
-  0% {
-    top: 450px;
-  }
-  25% {
-    top: 505px;
-  }
-  75% {
-    top: 510px;
-  }
-  100% {
-    top: 511px;
-  }
-}*/
 
 /*CHARACTERS*/
 

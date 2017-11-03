@@ -24,20 +24,20 @@ function Game(containerElement) {
   self.maps = [{
       name: 'Zombie',
       className: 'zombie',
-      img: "starter-code/img/wallpaperZombies.jpg",
-      img2: "starter-code/img/wallpaper-zombies2.png",
+      img: "img/wallpaperZombies.jpg",
+      img2: "img/wallpaper-zombies2.png",
       id: 'zombies',
       targets: [{
-          target: 'starter-code/img/zombie-fat.png',
+          target: 'img/zombie-fat.png',
           dataTarget: 0
         },
         {
-          target: 'starter-code/img/Zombie-raven.png',
+          target: 'img/Zombie-raven.png',
           dataTarget: 1
         },
         {
-          target: 'starter-code/img/zombie-teen.png',
-          dataTarget: 2
+
+
         }
       ]
 
@@ -45,57 +45,54 @@ function Game(containerElement) {
     {
       name: 'Terrorist',
       className: 'terrorist',
-      img: 'starter-code/img/wallpaper-terrorist.png',
-      id: 'terrorist',
+
       targets: [{
-          target: 'starter-code/img/terrorist1.png',
-          dataTarget: 0
+
+
         },
         {
-          target: 'starter-code/img/terrorist2.png',
-          dataTarget: 1
+
+
         },
         {
-          target: 'starter-code/img/bin-laden.png',
-          dataTarget: 2
+
+
         }
       ]
     },
     {
       name: 'Aliens',
       className: 'aliens',
-      img: "starter-code/img/wallpaper-alliens.jpg",
-      id: 'aliens',
+
       targets: [{
-          target: 'starter-code/img/alien-ship.png',
-          dataTarget: 0
+
+
         },
         {
-          target: 'starter-code/img/ship-alien.png',
-          dataTarget: 0
+
+
         },
         {
-          target: 'starter-code/img/alien-ship2.png',
-          dataTarget: 0
+
+
         }
       ]
     },
     {
       name: 'Nintendo',
       className: 'nintendo',
-      img: "starter-code/img/wallpaper-nintendo.gif",
-      id: 'characters',
+
       targets: [{
-          target: 'starter-code/img/boo.mario.png',
-          dataTarget: 0
+
+
         },
         {
-          target: 'starter-code/img/Meta-Knight.png',
-          dataTarget: 1
+
+
         },
         {
-          target: 'starter-code/img/Bowser.png',
-          dataTarget: 2
+
+
         }
       ]
     },
@@ -132,11 +129,7 @@ function Game(containerElement) {
     self.containerGame.setAttribute('id', 'container-game');
     play.setAttribute('id', 'container');
     playImg.setAttribute('id', 'splash-image');
-    playImg.setAttribute("src", "starter-code/img/btn-play-copia.png")
-    nameGame.setAttribute('id', 'name');
     shooter.setAttribute('id', 'shooter');
-    shooter.setAttribute('src', 'starter-code/img/title-shooter.png');
-    shooter.setAttribute('style', 'width: 60%;');
 
     self.containerGame.appendChild(play);
     var playId = document.getElementById('container');
@@ -340,8 +333,6 @@ function Game(containerElement) {
     self.targets.setAttribute('id', 'targets');
     self.containerElement.appendChild(self.targets);
     self.targets.setAttribute('style', 'background-image:' + 'url(' + map + ')');
-    // var audio = new Audio('../starter-code/sounds/zwieR.Z.-Plethora.mp3');
-    // audio.play();
     var x = document.getElementById('myAudio');
     x.play();
 
