@@ -135,6 +135,7 @@ function Game(containerElement) {
     playImg.setAttribute("src", "img/btn-play-copia2.png")
     nameGame.setAttribute('id', 'name');
     shooter.setAttribute('id', 'shooter');
+    shooter.setAttribute('src', 'img/title-shooter.png');
 
     self.containerGame.appendChild(play);
     var playId = document.getElementById('container');
