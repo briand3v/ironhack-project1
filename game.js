@@ -381,7 +381,7 @@ function Game(containerElement) {
       clearInterval(self.newTargetInterval);
       self.destroyGame();
 
-    }, 5000);
+    }, 20000);
 
   };
 
