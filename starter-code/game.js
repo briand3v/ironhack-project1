@@ -132,7 +132,7 @@ function Game(containerElement) {
     self.containerGame.setAttribute('id', 'container-game');
     play.setAttribute('id', 'container');
     playImg.setAttribute('id', 'splash-image');
-    playImg.setAttribute("src", "../starter-code/img/btn-play-copia.png")
+    playImg.setAttribute("src", "starter-code/img/btn-play-copia.png")
     nameGame.setAttribute('id', 'name');
     shooter.setAttribute('id', 'shooter');
     shooter.setAttribute('src', '../starter-code/img/title-shooter.png');
