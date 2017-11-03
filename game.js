@@ -21,6 +21,7 @@ function Game(containerElement) {
   self.getImgInterval = null;
   self.moreInterval = null;
   self.x = null;
+  self.gun = null;
 
   self.maps = [{
       name: 'Zombie',
@@ -201,20 +202,7 @@ function Game(containerElement) {
 
         self.destroyMaps();
         self.buildGame();
-        // self.containerGame.setAttribute('id', 'container2');
-        // self.container2 = document.getElementById('container2')
 
-
-        // self.targets = document.createElement('div');
-        // self.targets.setAttribute('id', 'targets');
-        //
-        // self.containerElement.appendChild(self.targets);
-
-
-
-        // self.currentMapIndex = event.target.getAttribute('data-map');
-        // destroy maps
-        // build game
       };
 
       map.addEventListener('click', self.handleMapClick);
@@ -362,12 +350,6 @@ function Game(containerElement) {
 
 
 
-
-
-
-
-
-
     var appear = document.getElementById('socore-life');
     appear.setAttribute('id', 'score');
 
@@ -399,6 +381,8 @@ function Game(containerElement) {
 
   self.killTarget = function(event) {
     clearInterval(self.timeoutTargetID);
+    self.gun = document.getElementById('myGun')
+    self.gun.play();
     console.log(event.target)
     self.containerElement.removeChild(event.target);
     if (self.targetIndex === 0) {
@@ -422,7 +406,6 @@ function Game(containerElement) {
     self.containerElement.removeChild(self.targets); // container2
     self.containerElement.removeChild(self.scoreHide);
     self.buildResults();
-
     self.x.paused();
 
   };
