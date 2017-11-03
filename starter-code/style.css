@@ -6,74 +6,58 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
-}
-
-.app {
-  /*position: null;*/
-  background-color: white;
-  height: 90%;
-  width: 100%;
-}
-
-footer {
-  width: 100%;
-  height: 70px;
-  background-image: url('../starter-code/img/wallhaven-4764.png');
-  background-size: cover;
-}
-
-.game {
-  display: block;
-  position: absolute;
-  background-color: white;
-  height: 100%;
-  width: 100%;
-}
-
 /*
   splash
 */
 
 #container-game {
-  display: block;
-  top: 100px;
-  background-color: white;
-  height: 100%;
-}
-
-#splash {
-  background-image: url("../starter-code/img/wallpaper-shooter.jpg");
-  background-size: cover;
   display: flex;
-  width: 100%;
-  height: 100%;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("../starter-code/img/wallpaper-shooter2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
 }
 
 #container {
-  top: 300px;
-  left: 300px;
+  margin-top: 200px;
 }
 
-#image {
-  width: 200px;
-  height: 105px;
-  background-image: url("../starter-code/img/btn-play-copia.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+#splash-image {}
 
 #name {
   font-family: OCR A Std, monospace;
   font-size: 100px;
-  margin: 0;
   color: grey;
+}
+
+#shooter {
+  animation: example 2s infinite;
+  margin-bottom: 100px;
+}
+
+@keyframes example {
+  0% {
+    width: 60%;
+  }
+  25% {
+    width: 60%;
+  }
+  50% {
+    width: 90%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+#score {
+  position: relative;
+  width: 100%;
+  height: 66px;
 }
 
 /*
@@ -82,12 +66,13 @@ footer {
 
 #maps {
   display: flex;
-  min-height: 90vh;
+  /*min-height: 90vh;*/
   overflow: hidden;
-  width: 100%;
-  height: 100%;
   background-color: white;
   justify-content: center;
+  background-color: white;
+  background-size: 100% 100%;
+  height: 100vh;
 }
 
 .map {
@@ -100,7 +85,7 @@ footer {
 }
 
 .map-zombie {
-  background-image: url("../starter-code/img/wallpaper-zombies.jpg");
+  background-image: url("../starter-code/img/wallpaperZombies.jpg");
 }
 
 .map-terrorist {
@@ -117,15 +102,19 @@ footer {
 
 /*game */
 
-#targets {
-  display: flex;
+#container2 {
+  /*display: block;
   position: absolute;
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 90%;
+  background-size: contain;
+  width: 1420px;
+  height: 800px;
   border: 1px solid grey;
-  animation: animate 0.25s infinite;
+  justify-content: center;*/
+  /*animation: animate 0.25s infinite;*/
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+  height: 100vh;
 }
 
 @keyframes animate {
@@ -149,9 +138,51 @@ footer {
   }
 }
 
+#targets {
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: 100% 100%;
+  height: 90vh;
+}
+
+/*#zombie-map1 {
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: 100% 100%;
+  height: 90vh;
+  animation: example2 1s infinite;
+}*/
+
+@@keyframes example2 {
+  10% {
+    background-image: url('../starter-code/img/wallpaperZombies.jpg');
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 100% 100%;
+    height: 90vh;
+  }
+  100% {
+    background-image: url('../starter-code/img/wallpaper-zombies2.png');
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 100% 100%;
+    height: 90vh;
+  }
+}
+
 #newTarget {
-  position: absolute;
-  width: 70px;
+  /*position: absolute;*/
+  width: 90px;
+  min-height: 5vh;
+  overflow: hidden;
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
@@ -159,7 +190,7 @@ footer {
 
 #newTarget2 {
   position: absolute;
-  width: 70px;
+  width: 90px;
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
@@ -170,7 +201,6 @@ footer {
 }
 
 #points {
-  position: absolute;
   margin: 0px;
   left: 564px;
 }
@@ -195,4 +225,124 @@ footer {
   100% {
     top: 511px;
   }
+}*/
+
+/*CHARACTERS*/
+
+/*#zombies {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-image: url("../starter-code/img/scared-people.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 565px;
+  top: 209px;
+  transition: font-size;
+  flex: 1;
+}*/
+
+/*    RESULTS    */
+
+#totalScore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: grey;
+  background-image: url('../starter-code/img/game-over.gif');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+}
+
+#reset-btn {
+  width: 200px;
+  height: 200px;
+  background-image: url('../starter-code/img/reset.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*    LIFE   */
+
+#contentLife {
+  display: block;
+  width: 100%;
+  height: 66px;
+  border-radius: 15px;
+}
+
+#childLife {
+  width: 100%;
+  height: 66px;
+  background-color: red;
+  border-radius: 15px;
+}
+
+#full {
+  width: 85%;
+  height: 66px;
+  background-color: red;
+  border-radius: 15px;
+  /*animation-name: example1;
+  animation-duration: 3s;*/
+  /*animation: example1 3s infinite;*/
+}
+
+/*@keyframes example1 {
+  0% {
+    width: 100%;
+  }
+  25% {
+    width: 95%;
+  }
+  50% {
+    width: 95%;
+  }
+  100% {
+    width: 95%;
+  }
+}*/
+
+#less1 {
+  width: 65%;
+  height: 66px;
+  background-color: red;
+  border-radius: 15px;
+}
+
+#less2 {
+  width: 45%;
+  height: 66px;
+  background-color: red;
+  border-radius: 15px;
+}
+
+#less3 {
+  width: 25%;
+  height: 66px;
+  background-color: red;
+  border-radius: 15px;
+}
+
+#less4 {
+  width: 15%;
+  height: 66px;
+  background-color: red;
+  border-radius: 15px;
+}
+
+#less5 {
+  width: 0%;
+  height: 66px;
+  background-color: red;
+  border-radius: 15px;
+}
+
+/*#empty {
+  width: 0%;
+  height: 100px;
+  background-color: red;
 }*/
