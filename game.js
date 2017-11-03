@@ -132,7 +132,7 @@ function Game(containerElement) {
     self.containerGame.setAttribute('id', 'container-game');
     play.setAttribute('id', 'container');
     playImg.setAttribute('id', 'splash-image');
-    playImg.setAttribute("src", "./img/btn-play-copia2.png")
+    playImg.setAttribute("src", "https://github.com/brianboyCode/ironhack-project1/raw/master/img/btn-play-copia2.png")
     nameGame.setAttribute('id', 'name');
     shooter.setAttribute('id', 'shooter');
     shooter.setAttribute('src', './img/title-shooter.png');
