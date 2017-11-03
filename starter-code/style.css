@@ -16,7 +16,7 @@ html {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-  background-image: url("../starter-code/img/wallpaper-shooter2.jpg");
+  background-image: url("img/wallpaper-shooter2.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 100vh;
@@ -85,19 +85,19 @@ html {
 }
 
 .map-zombie {
-  background-image: url("../starter-code/img/wallpaperZombies.jpg");
+  background-image: url("img/wallpaperZombies.jpg");
 }
 
 .map-terrorist {
-  background-image: url('../starter-code/img/wallpaper-terrorist.png');
+  background-image: url('img/wallpaper-terrorist.png');
 }
 
 .map-aliens {
-  background-image: url("../starter-code/img/wallpaper-alliens.jpg");
+  background-image: url("img/wallpaper-alliens.jpg");
 }
 
 .map-nintendo {
-  background-image: url("../starter-code/img/wallpaper-retro-games.jpg");
+  background-image: url("img/wallpaper-retro-games.jpg");
 }
 
 /*game */
@@ -180,7 +180,7 @@ html {
   position: absolute;
   width: 200px;
   height: 200px;
-  background-image: url("../starter-code/img/scared-people.png");
+  background-image: url("img/scared-people.png");
   background-size: contain;
   background-repeat: no-repeat;
   left: 565px;
@@ -198,7 +198,7 @@ html {
   align-items: center;
   justify-content: space-between;
   background-color: grey;
-  background-image: url('../starter-code/img/game-over.gif');
+  background-image: url('img/game-over.gif');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 100vh;
@@ -207,7 +207,7 @@ html {
 #reset-btn {
   width: 200px;
   height: 200px;
-  background-image: url('../starter-code/img/reset.jpg');
+  background-image: url('img/reset.jpg');
   background-size: contain;
   background-repeat: no-repeat;
 }
